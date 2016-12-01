@@ -54,7 +54,8 @@ public class MainActivity extends AppCompatActivity implements ItemAdapter.custo
 
         Retrofit retrofit = new Retrofit.Builder()
 //                .baseUrl("https://api.github.com/")
-                .baseUrl("http://192.168.137.53:8081/PHP_Project_forXAMPP/11-14_projectForAll/")
+                //.baseUrl("http://192.168.137.53:8081/PHP_Project_forXAMPP/11-14_projectForAll/")
+                .baseUrl("http://127.0.0.1:80/PHP_Project_forXAMPP/11-14_projectForAll/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
